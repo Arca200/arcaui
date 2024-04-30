@@ -29,6 +29,16 @@
     plain
     >info</Button
   >
+  <Button
+    size="large"
+    loading
+    >Loading</Button
+  >
+  <Button
+    size="large"
+    icon="arrow-up"
+    >Icon</Button
+  >
   <Button size="small">small</Button>
   <Button size="normal">normal</Button>
   <Button size="large">large</Button>

@@ -1,5 +1,6 @@
 import buttton from '../views/button.vue'
 import collapse from '../views/collapse.vue'
+import icon from '../views/icon.vue';
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -10,6 +11,10 @@ const routes = [
     {
         path: '/collapse',
         component: collapse,
+    },
+    {
+        path: '/icon',
+        component: icon,
     }
 ]
 

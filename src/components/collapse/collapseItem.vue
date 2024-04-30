@@ -13,6 +13,9 @@
       :id="`item-header-${name}`"
       @click="handleClick">
       <slot name="title"> {{ title }}</slot>
+      <Icon
+        icon="angle-right"
+        class="header-angle" />
     </div>
     <!-- <Transition name="fade">
       <div
@@ -39,6 +42,7 @@
 <script setup lang="ts">
 import { CollapseItemProps, collapseContextKey } from './types'
 import { inject, computed } from 'vue'
+import Icon from '../icon/icon.vue'
 defineOptions({
   name: 'VKCollapseItem'
 })

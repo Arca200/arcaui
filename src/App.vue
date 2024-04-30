@@ -8,15 +8,6 @@
 html,
 body,
 #app {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
-}
-#app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  height: 100%;
 }
 </style>
