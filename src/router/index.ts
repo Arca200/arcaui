@@ -3,6 +3,10 @@ import collapse from '../views/collapse.vue'
 import icon from '../views/icon.vue'
 import tooltip from '../views/tooltip.vue'
 import dropdown from '../views/dropdown.vue'
+<<<<<<< HEAD
+=======
+import message from '../views/message.vue'
+>>>>>>> 8c70f0e (message)
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -25,6 +29,13 @@ const routes = [
     {
         path: '/dropdown',
         component: dropdown
+<<<<<<< HEAD
+=======
+    },
+    {
+        path: '/message',
+        component: message
+>>>>>>> 8c70f0e (message)
     }
 ]
 
