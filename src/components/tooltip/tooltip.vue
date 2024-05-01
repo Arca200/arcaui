@@ -125,7 +125,7 @@ watch(
   }
 )
 useClickOutside(popperContainerNode, () => {
-  if (props.trigger === 'click' && isOpen.value === true && !props.manual) {
+  if (props.trigger === 'click' && isOpen.value === true && props.manual) {
     close()
   }
 })

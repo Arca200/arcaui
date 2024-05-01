@@ -17,13 +17,6 @@
         icon="angle-right"
         class="header-angle" />
     </div>
-    <!-- <Transition name="fade">
-      <div
-        class="vk-collapse-item__content"
-        :id="`item__content-${name}`"
-        v-show="isActive">
-        <slot></slot></div
-    ></Transition> -->
     <Transition
       name="slide"
       v-on="transitionEvents">
