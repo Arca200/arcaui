@@ -71,15 +71,9 @@ function close() {
   visible.value = false
 }
 
-// watch(visible, (newV) => {
-//   if (!newV) {
-//     props.onDestory()
-//   }
-// })
 function destroyComponent() {
   props.onDestory()
 }
-
 
 onMounted(async () => {
   visible.value = true
