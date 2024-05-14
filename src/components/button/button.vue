@@ -1,8 +1,8 @@
 <template>
   <button
-    ref="_ref"
-    class="vk-button"
-    :class="{
+      ref="_ref"
+      class="vk-button"
+      :class="{
       [`vk-button--${type}`]: type,
       [`vk-button--${size}`]: size,
       'is-plain': plain,
@@ -11,26 +11,26 @@
       'is-disabled': disabled,
       'is-loading': loading
     }"
-    :disabled="disabled || loading"
-    :autofocus="autofocus"
-    :type="nativeType">
+      :disabled="disabled || loading"
+      :autofocus="autofocus"
+      :type="nativeType">
     <Icon
-      icon="spinner"
-      spin
-      v-if="loading"></Icon>
+        icon="rotate"
+        spin
+        v-if="loading"></Icon>
     <Icon
-      :icon="icon"
-      v-if="icon"></Icon>
+        :icon="icon"
+        v-if="icon"></Icon>
     <span>
-      <slot />
+      <slot/>
     </span>
   </button>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
-import './style.css'
-import type { ButtonProps } from './types'
+import {ref} from 'vue'
+import type {ButtonProps} from './types'
 import Icon from '../icon/icon.vue'
+
 defineOptions({
   name: 'VkButton'
 })

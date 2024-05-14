@@ -3,11 +3,11 @@ import collapse from '../views/collapse.vue'
 import icon from '../views/icon.vue'
 import tooltip from '../views/tooltip.vue'
 import dropdown from '../views/dropdown.vue'
-<<<<<<< HEAD
-=======
 import message from '../views/message.vue'
->>>>>>> 8c70f0e (message)
-import { createRouter, createWebHistory } from "vue-router";
+import input from '../views/input.vue'
+import Switch from '../views/switch.vue'
+import select from '../views/select.vue'
+import {createRouter, createWebHistory} from "vue-router";
 
 const routes = [
     {
@@ -29,13 +29,22 @@ const routes = [
     {
         path: '/dropdown',
         component: dropdown
-<<<<<<< HEAD
-=======
     },
     {
         path: '/message',
         component: message
->>>>>>> 8c70f0e (message)
+    },
+    {
+        path: '/input',
+        component: input
+    },
+    {
+        path: '/switch',
+        component: Switch
+    },
+    {
+        path: '/select',
+        component: select
     }
 ]
 
